@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-f4pg
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0029-tenant/tkrw-pr712-0075-0029-app/devfile-sample-f4pg@sha256:5f0364c5ba6dcbd13eaae72c95bbe0a4b4a384049ae3b1f409cd546c341b0b5c
+        name: my-nodejs
+        resources: {}
+status: {}
